@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+$light-red: hsl(356, 100%, 66%);
+$very-dark-desaturated-blue: hsl(237, 23%, 32%);
+$very-light-red: hsl(355, 100%, 74%);
+$very-dark-blue: hsl(208, 49%, 24%);
+$very-dark-grayish-blue: hsl(207, 13%, 34%);
+$very-dark-black-blue: hsl(240, 10%, 16%);
+
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    
+    
+    
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+    }
+}
+
+.hero-section {
+    height: 60vh;
+    background: linear-gradient(hsl(353, 100%, 62%), hsl(13, 100%, 72%));
+    position: relative;
+   
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 3rem;
+            max-width: 1440px;
+            margin: auto;
+
+            .left-side {
+                display: flex;
+                width: 700px;
+                justify-content: space-around;
+
+                .menu {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 300px;
+
+
+                    .dropdown {  
+                        display: inline;  
+                        position: relative;  
+
+
+                        .dropdown-content {  
+                            position: absolute;  
+                            background-color: white;  
+                            min-width: 100px;  
+                            display: none;  
+                            z-index: 1;
+                            text-align: center;
+                            color: black;
+                            border-radius: 8px;
+                            margin-top: 1rem;
+
+                        }
+                        
+                        .dropbtn {  
+                              
+                            font-family: Ubuntu, sans-serif;    
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: white;  
+                        }  
+                    }
+                    
+                    .dropdown:hover .dropdown-content {  
+                        display: flex;
+                        flex-direction: column;
+                        height: 200px;
+                        justify-content: space-around;
+
+                    }
+                    
+                    .dropdown-content a {
+                        font-family: Ubuntu, sans-serif;
+                        font-weight: 300;
+
+                    }
+
+                    .dropdown-content a:hover {
+                        font-weight: 600;
+                    }
+
+                    .dropbtn:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .right-side {
+                display: flex;
+                justify-content: space-around;
+                width: 300px;
+
+                a {
+                    color: white;
+                    font-family: Ubuntu, sans-serif;
+                }
+                button {
+                    background: white;
+                    border: none;
+                    border-radius: 20px;
+                    padding: 10px 30px;
+                    cursor: pointer;
+                    font-weight: 500;
+                    font-family: Ubuntu;
+
+                }
+                button:hover {
+                    background: $very-light-red;
+                    color: white;
+                }
+            }
+        }
+
+
+    .titles {
+        width: 80%;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-family: Overpass, sans-serif;
+        
+        h1 {
+            font-size: 4rem;
+            color: white;
+            font-weight: 600;
+        
+            
+
+        }
+        p {
+            font-size: 1rem;
+            color: white;
+            font-weight: 400;
+        }
+        .titles-links {
+            display: flex;
+            justify-content: space-around;
+            width: 400px;
+            margin: 30px auto;
+        }
+        .titles-links a:nth-child(1) {
+            background: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 30px;
+            color: $very-light-red;
+            font-weight: 600;
+            font-family: Overpass;
+
+        }
+        .titles-links a:nth-child(2) {
+            background: $very-light-red;
+            border: 1px solid white;
+            border-radius: 20px;
+            padding: 10px 30px;
+            color: white;
+            font-weight: 600;
+            font-family: Overpass;
+        }
+    }    
+}
+
+
+
+
+
+    
+    
+
+
+    
+
+     .first-sctn {
+         padding-top: 100px;
+         padding-bottom: 200px;
+         width: 1440px;
+         margin: auto;
+         position: relative;
+   
+   
+         h1 {
+            position: absolute;
+            color: $very-dark-blue;
+            font-family: Overpass;
+            font-size: 30px;
+            left: 300px;
+            
+            
+    
+       }
+   
+       .first-flex-sctn {
+        display: flex;
+        padding-top: 100px;
+        position: relative;
+ 
+         .text h3 {
+             font-family: Overpass;
+             color: $very-dark-blue;
+             font-size: 16px;
+             padding-top: 70px;
+         }
+ 
+         .text p {
+             font-family: Ubuntu;
+             color: rgb(189, 189, 189);
+             font-size: 14px;
+             line-height: 2;
+             width: 600px;
+         }
+ 
+         img {
+             width: 900px;
+             position: absolute;
+             left: 750px;
+             top:-150px;
+             
+         }
+    
+     }
+   
+   
+}
+
+
+   
+
+    
+    .second-background {
+        background: $very-dark-blue;
+    
+        .second-sctn {
+        
+            height: 500px;
+            
+            display: flex;
+            justify-content: center;
+            gap: 140px;
+            margin: 100px 0;
+            
+            
+            
+            
+        
+            .second-sctn-text {
+                color: white;
+                position: relative;
+                bottom: -140px;
+        
+                h3 {
+                    font-family: Overpass;
+                    font-size: 30px;
+                }
+        
+                p {
+                    width: 500px;
+                    line-height: 2;
+                    color: rgb(231, 231, 231);
+                    font-family: Ubuntu;
+                    font-size: 15px;
+                }
+            }
+        
+        
+        }
+    }
+    
+    
+    .third-sctn {
+        display: flex;
+        width: 1440px;
+         margin: auto;
+        
+
+        img {
+            position: relative;
+            left: -200px;
+        }
+
+        .third-section-text {
+            position: relative;
+            top: 150px;
+            left: -200px;
+        }
+        
+        .text-one {
+            h3 {
+                font-size: 26px;
+                color: $very-dark-blue;
+                font-family: Overpass;
+
+
+            }
+            p {
+                color: rgb(189, 189, 189);
+                font-family: Ubuntu;
+                line-height: 1.5;
+                font-size: 16px;
+            }
+        }
+
+        .text-two {
+            h3 {
+                font-size: 26px;
+                color: $very-dark-blue;
+                font-family: Overpass;
+            }
+            p {
+                color: rgb(189, 189, 189);
+                font-family: Ubuntu;
+                line-height: 1.5;
+                font-size: 16px;
+            }
+        }
+    }
+
+
+.third-background {
+    background: $very-dark-black-blue;
+}
+.attribution {
+    
+    padding: 3rem;
+    width: 1440px;
+    margin: auto;
+    
+
+    .logo {
+        display: flex;
+        justify-content: space-around;
+        
+        margin: auto;
+    
+    
+        .footer-links {
+            display: flex;
+            justify-content: space-around;
+            width: 500px;
+            gap: 200px;
+            .product {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                font-size: 18px;
+                font-family: Overpass;
+                color: rgb(201, 201, 201);
+            }
+            .product a:nth-child(1) {
+                color: white;
+                padding-bottom: 20px;
+            }
+            .product a {
+                color:rgb(201, 201, 201)
+            }
+            .company {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                font-size: 18px;
+                font-family: Overpass;
+            }
+            .company a {
+                color:rgb(201, 201, 201)
+            }
+            .company a:nth-child(1) {
+                color: white;
+                padding-bottom: 20px;
+            }
+            .connect {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                font-size: 18px;
+                font-family: Overpass;
+            }
+            .connect a:nth-child(1) {
+                color: white;
+                padding-bottom: 20px;
+            }
+            .connect a {
+                color: rgb(201, 201, 201)
+            }
+        }
+    }
+
+    .challenge {
+        padding-top: 3rem;
+        font-size: 16px;
+        color: white;
+    }
+
+}
